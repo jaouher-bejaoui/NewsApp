@@ -14,6 +14,7 @@ struct ArticleRow: View {
 				.frame(width: 100, height: 100)
 				.cornerRadius(8)
 			}
+			Spacer()
 			VStack(alignment: .leading) {
 				Text(article.title)
 					.font(.headline)
@@ -24,8 +25,7 @@ struct ArticleRow: View {
 						.lineLimit(2)
 				}
 			}
-		}.frame(maxWidth: .infinity)
-			.padding(.horizontal, 2)
+		}.frame(width: .infinity)
 	}
 }
 
